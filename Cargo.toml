@@ -2,9 +2,16 @@
 name = "network_sniffer"
 version = "0.1.0"
 edition = "2021"
+build = "build.rs"
 
 [dependencies]
 pcap = "0.9"
 tokio = { version = "1", features = ["full"] }
 egui = "0.12"
 eframe = "0.12"
+log = "0.4"
+env_logger = "0.10"
+chrono = "0.4"
+
+[build-dependencies]
+cc = "1.0"
